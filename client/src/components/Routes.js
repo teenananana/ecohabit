@@ -27,20 +27,24 @@ import Logout from "./Logout";
  * Creating routes via createBrowserRouter method makes project ready for react-router-dom 6.4 data fetching.
  * MainLayout component has common items like navbar and footer.
  */
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />} errorElement={<ErrorPage />}>
+      {/* Public Routes - accessible without login */}
       <Route index element={<Homepage />} />
       <Route path="/homepage" element={<Navigate replace to="/" />} />
       <Route path="/locations" element={<LocationsPage />} />
       <Route path="/guides" element={<GuidesPage />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/profile" element={<ProfilePage />} />
       <Route path="/login" element={<LoginPage />} />
-      <Route path="/logout" element={<Logout />} />
       <Route path="/terms" element={<TermsConditionPage />} />
-      <Route path="/Demo" element={<Demo />} />
+      
+      {/* Private Routes - require authentication */}
+      <Route element={<PrivateRoute />}>
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/logout" element={<Logout />} />
+        <Route path="/Demo" element={<Demo />} />
+      </Route>
     </Route>
   )
 );
