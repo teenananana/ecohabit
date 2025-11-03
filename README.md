@@ -82,6 +82,32 @@ If you prefer the command line way of downloading and installing things, then fe
 
 ## Roadmap
 
+### Phase 1: Core Features (Current)
+- User authentication and profile management
+- Activity tracking (recycling, commuting, eating)
+- Habit visualization dashboard
+- Basic recycling location finder
+
+### Phase 2: Enhanced Features
+- Personalized habit recommendations
+- Achievement badges and gamification
+- Social features and community challenges
+- Carbon footprint calculator
+- Mobile application development
+
+### Phase 3: Advanced Features
+- AI-powered habit insights
+- Integration with IoT devices
+- Partnerships with local recycling centers
+- Educational content library
+- Multi-language support
+
+### Long-term Vision
+- Expand to global recycling database
+- Corporate sustainability partnerships
+- Environmental impact analytics
+- Community-driven content creation
+
 - _List any features planned_
 
 ## Contribute
