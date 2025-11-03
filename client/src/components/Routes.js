@@ -1,7 +1,7 @@
 /**
  *To avoid bloated App.js component, page routes created at this component.
  */
-
+import PrivateRoute from './PrivateRoute';
 import React from "react";
 import {
   RouterProvider,
